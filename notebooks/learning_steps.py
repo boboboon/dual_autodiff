@@ -70,5 +70,7 @@ plt.show()
 logger.info("Observations:")
 logger.info("1. As the step size decreases, the numerical derivative approaches the analytical .")
 logger.info(
-    "2. For very small step sizes, the numerical derivative may diverge due to instability.",
+    "2. For larger step sizes, the numerical derivative diverges due to instability.",
 )
+
+# %%
