@@ -20,7 +20,7 @@ Overview
 
 The **dual_autodiff** library leverages dual numbers to enable forward-mode automatic differentiation, a powerful technique for symbolic differentiation. This is particularly useful for applications requiring precise and efficient derivative computations, such as optimization, machine learning, and scientific computing.
 
-### Dual Numbers and Automatic Differentiation
+Dual Numbers and Automatic Differentiation
 
 Dual numbers are an extension of real numbers designed to compute derivatives through symbolic propagation. A dual number is expressed as:
 
@@ -52,7 +52,7 @@ This command installs the package in editable mode, which is helpful for develop
 Usage
 -----
 
-### Basic Example with the Dual Class
+Basic Example with the Dual Class
 
 The ``Dual`` class represents a dual number with real and dual parts, enabling automatic differentiation.
 
@@ -69,7 +69,7 @@ The ``Dual`` class represents a dual number with real and dual parts, enabling a
 
 The result’s real part is the value of the function, and the dual part provides the derivative.
 
-### Using the differentiate Function
+Using the differentiate Function
 
 The ``differentiate`` function allows you to compute the derivative of a function at a specific point.
 
@@ -90,7 +90,7 @@ This function initializes a dual number with a dual component of 1 to propagate 
 API Documentation
 -----------------
 
-### The Dual Class
+The Dual Class
 
 The ``Dual`` class provides support for arithmetic operations and elementary functions on dual numbers, allowing automatic differentiation. Key methods include:
 
@@ -103,7 +103,7 @@ The ``Dual`` class provides support for arithmetic operations and elementary fun
 - ``exp()``: Computes the exponential function.
 - ``log()``: Computes the natural logarithm, raising a ValueError for non-positive inputs.
 
-### differentiate Function
+differentiate Function
 
 The ``differentiate`` function calculates the derivative of a function at a specified point. It operates by initializing a dual number with a dual component of 1, allowing derivatives to propagate through the function.
 
