@@ -23,3 +23,8 @@ dependencies = [
 version_scheme = "post-release"
 local_scheme = "no-local-version"
 write_to = "dual_autodiff/version.py"  # Where the generated version will be saved
+
+[tool.setuptools.packages.find]
+include = ["dual_autodiff"]
+exclude = ["notebooks", "tests"]
+
