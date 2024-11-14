@@ -1,9 +1,34 @@
 # dual_autodiff Documentation
 
-Welcome to the **dual_autodiff** documentation. This Python package provides forward-mode automatic differentiation using dual numbers. This documentation covers the following:
+ Welcome to the **dual_autodiff** documentation. This Python package provides 
+ forward-mode automatic differentiation using dual numbers. This documentation 
+ covers the following sections:
 
-- [Overview](md/overview.md)
-- [Installation](md/installation.md)
-- [Usage](md/usage.md)
-- [API Documentation](md/api.md)
-- [Analytical Solutions and Test Cases](md/analytical_solutions.md)
+ - [Overview](#overview)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [API Documentation](#api-documentation)
+ - [Analytical Solutions and Test Cases](#analytical-solutions-and-test-cases)
+ - [Contributing](#contributing)
+
+ ---
+
+ ## Overview
+{include} md/overview.md
+
+
+ ## Installation
+ {include} md/installation.md
+
+
+ ## Usage
+ {include} md/usage.md
+
+
+ ## API Documentation
+ {include} md/api.md
+
+
+ ## Analytical Solutions and Test Cases
+ {include} md/analytical_solutions.md
+
