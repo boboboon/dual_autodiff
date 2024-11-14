@@ -1,5 +1,3 @@
-# Basic Example with the Dual Class
-
 The `Dual` class in `dual_autodiff` represents a dual number, which has two components: a real part and a dual part. This class allows for automatic differentiation by tracking the function's value through the real component and the derivative through the dual component.
 
 ## Python Usage Example
