@@ -2,3 +2,4 @@
 Sphinx
 sphinx-rtd-theme
 readthedocs-sphinx-ext
+myst-parser
