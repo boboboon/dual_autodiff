@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dual_autodiff"
-dynamic = ["version"]  # Indicate version will be dynamically set by setuptools_scm
+dynamic = ["version"]
 description = "A Python package for forward-mode automatic differentiation using dual numbers."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -13,18 +13,26 @@ authors = [
     { name = "Lucas Curtin", email = "lucas.curtin@gmail.com" },
 ]
 
-# Dependencies required for runtime
+# Core dependencies for runtime
 dependencies = [
     "numpy",
-    "scipy"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "matplotlib",
+    "jupyter",
+    "Sphinx",
+    "docker",
+    "cibuildwheel"
 ]
 
 [tool.setuptools_scm]
 version_scheme = "post-release"
 local_scheme = "no-local-version"
-write_to = "dual_autodiff/version.py"  # Where the generated version will be saved
+write_to = "dual_autodiff/version.py"
 
 [tool.setuptools.packages.find]
 include = ["dual_autodiff"]
 exclude = ["notebooks", "tests"]
-
