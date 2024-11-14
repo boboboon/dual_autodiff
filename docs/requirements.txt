@@ -1,0 +1,4 @@
+# Core Sphinx and RTD dependencies
+Sphinx
+sphinx-rtd-theme
+readthedocs-sphinx-ext
