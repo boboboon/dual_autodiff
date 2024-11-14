@@ -9,7 +9,6 @@ covers the following sections:
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Analytical Solutions and Test Cases](#analytical-solutions-and-test-cases)
-- [Contributing](#contributing)
 
 
 
