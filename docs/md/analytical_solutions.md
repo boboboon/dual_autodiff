@@ -11,3 +11,10 @@ The package includes test cases with expected analytical solutions to verify cor
 | Quadratic $f(x) = x^2$        | $x = 3$    | 6                                       |
 | Trigonometric $f(x) = \sin(x)$| $x = 0$    | 1                                       |
 | Composite $f(x) = e^x \cdot \ln(x)$ | $x = 2$ | $e^2 \cdot (\ln(2) + 0.5)$           |
+
+
+To run these test cases, please execute:
+
+```bash
+pytest -s tests/*
+```
