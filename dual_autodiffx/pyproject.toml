@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual_autodiff_x"  # Updated name for the Cythonized version
+dynamic = ["version"]
+description = "A Cythonized Python package for forward-mode automatic differentiation using dual numbers."
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+    { name = "Lucas Curtin", email = "lucas.curtin@gmail.com" },
+]
+
+dependencies = [
+    "numpy",
+    "scipy"
+]
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+write_to = "dual_autodiff_x/version.py"
+
+[tool.setuptools.packages.find]
+include = ["dual_autodiff_x"]
+exclude = ["notebooks", "tests"]
+
+[project.optional-dependencies]
+# Dependencies required for development (testing, docs, etc.)
+dev = [
+    "pytest",
+    "sphinx",
+    "cibuildwheel"
+]
+
+[tool.cython]
+annotate = true  # Optional: generates HTML files showing which code is optimized by Cython
