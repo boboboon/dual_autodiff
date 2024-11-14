@@ -1,5 +1,3 @@
- API Documentation
-
 ## The Dual Class
 
 The `Dual` class supports arithmetic operations and elementary functions on dual numbers for automatic differentiation. Key methods include:

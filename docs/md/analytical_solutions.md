@@ -1,5 +1,3 @@
-# Analytical Solutions and Test Cases
-
 The package includes test cases with expected analytical solutions to verify correctness:
 
 - **Quadratic Function** $f(x) = x^2$: Expected derivative at $x = 3$ is 6.

@@ -1,5 +1,3 @@
-# Overview
-
 The **dual_autodiff** library leverages dual numbers for forward-mode automatic differentiation, useful in fields like optimization, machine learning, and scientific computing.
 
 ## Dual Numbers and Automatic Differentiation
