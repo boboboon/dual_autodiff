@@ -1,32 +1,36 @@
-"""Setup file for cython package alternative."""
-
-import numpy as np
+from setuptools import setup, Extension, find_packages
 from Cython.Build import cythonize
-from setuptools import Extension, setup
+import numpy
 
-# Define Cython extensions
+# Define the extensions for Cython compilation
 extensions = [
     Extension(
-        "dual_autodiff_x.dual",
-        ["dual_autodiff_x/dual.pyx"],
-        include_dirs=[np.get_include()],  # Include numpy headers if needed
+        "dual_autodiffx.dual",
+        ["dual_autodiffx/dual.pyx"],  # Correct path for dual.pyx
+        include_dirs=[numpy.get_include()],
+        define_macros=[("NPY_NO_DEPRECATED_API", "NPY_1_7_API_VERSION")],
     ),
     Extension(
-        "dual_autodiff_x.autodiff",
-        ["dual_autodiff_x/autodiff.pyx"],
-        include_dirs=[np.get_include()],
+        "dual_autodiffx.autodiff",
+        ["dual_autodiffx/autodiff.pyx"],  # Correct path for autodiff.pyx
+        include_dirs=[numpy.get_include()],
+        define_macros=[("NPY_NO_DEPRECATED_API", "NPY_1_7_API_VERSION")],
     ),
 ]
 
-# Setup configuration without versioning
+# Setup configuration
 setup(
-    name="dual_autodiff_x",
-    description="A Cythonized Python package for forward-mode automatic differentiation using dual numbers.",
-    author="Lucas Curtin",
-    author_email="lucas.curtin@gmail.com",
-    packages=["dual_autodiff_x"],
-    ext_modules=cythonize(extensions, language_level=3),
-    zip_safe=False,  # Typically, Cython modules are not zip-safe
-    include_dirs=[np.get_include()],
-    install_requires=["numpy", "scipy"],
+    name="dual_autodiffx",
+    version="0.1.0",
+    packages=find_packages(),
+    ext_modules=cythonize(
+        extensions,
+        language_level="3",
+        compiler_directives={
+            "boundscheck": False,
+            "wraparound": False,
+            "initializedcheck": False,
+        },
+    ),
+    zip_safe=False,
 )
