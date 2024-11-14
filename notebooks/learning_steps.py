@@ -37,7 +37,8 @@ analytical_result = analytical_derivative(x_val)
 logger.info(f"Analytical derivative at x = 1.5: {analytical_result}")
 
 
-# %% Compute numerical derivative using finite differences with decreasing step sizes
+# %%
+# ? Compute numerical derivative using finite differences with decreasing step sizes
 def f_numeric(x: float) -> float:
     """Evaluate log(sin(x)) + x^2 * cos(x) numerically for finite difference calculation."""
     return math.log(math.sin(x)) + x**2 * math.cos(x)
