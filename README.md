@@ -33,7 +33,7 @@ where:
 
 - `a` is the real part,
 - `b` is the dual part, and
-- `\epsilon` is an infinitesimal element with the property: $$ \epsilon^2 = 0 $$
+- `\epsilon` is an infinitesimal element with the property: $$\epsilon^2 = 0$$
 
 This representation enables us to differentiate functions symbolically by propagating derivatives through elementary operations.
 
@@ -65,7 +65,7 @@ $$
 f'(x) = 2x
 $$
 
-Therefore, at \( x = 3 \), we expect:
+Therefore, at $x = 3$, we expect:
 
 $$
 f'(3) = 6
@@ -86,7 +86,7 @@ $$
 f'(x) = \cos(x)
 $$
 
-At \( x = 0 \), we expect:
+At $x = 0$, we expect:
 
 $$
 f'(0) = 1
@@ -107,7 +107,7 @@ $$
 f'(x) = e^x \cdot \ln(x) + e^x \cdot \frac{1}{x}
 $$
 
-Thus, at \( x = 2 \):
+Thus, at $x = 2$:
 
 $$
 f'(2) = e^2 \cdot (\ln(2) + 0.5)
@@ -119,15 +119,6 @@ $$
 
 | Function                                  | Test Input | Expected Derivative                           |
 |-------------------------------------------|------------|-----------------------------------------------|
-| Quadratic Function \( f(x) = x^2 \)      | \( x = 3 \) | 6                                             |
-| Trigonometric Function \( f(x) = \sin(x) \) | \( x = 0 \) | 1                                             |
-| Composite Function \( f(x) = e^x \ln(x) \) | \( x = 2 \) | \( e^2 \cdot (\ln(2) + 0.5) \)               |
-
----
-
-## Conclusion
-
-This document explains how dual numbers and automatic differentiation can be used to compute derivatives of various functions. Through the examples provided, we can see how the dual_autodiff library leverages dual numbers to simplify derivative calculations, especially for functions that involve composite operations.
-
-By implementing automatic differentiation using dual numbers, we can compute derivatives efficiently, which is especially useful for optimization problems, machine learning, and other fields that require gradient-based methods.
-
+| Quadratic Function $f(x) = x^2$          | $x = 3$    | 6                                             |
+| Trigonometric Function $f(x) = \sin(x)$  | $x = 0$    | 1                                             |
+| Composite Function $f(x) = e^x \ln(x)$   | $x = 2$    | $e^2 \cdot (\ln(2) + 0.5)$                   |
