@@ -66,7 +66,7 @@ In this Cython class:
 
 ### Cython Methods for Arithmetic Operations
 
-Cython's `cdef inline` methods define the core operations $(\plus, \minus, \cross, \div)$ for dual numbers. These methods are optimised with low-level C-like operations for speed.
+Cython's `cdef inline` methods define the core operations $(+, -, \times, \div)$ for dual numbers. These methods are optimised with low-level C-like operations for speed.
 
 #### Addition
 
