@@ -34,6 +34,10 @@ html_theme_options = {
     "show_toc_level": 1,
 }
 
+# Path to the logo
+html_logo = "_static/logo.png"
+
+
 html_static_path = ["_static"]
 
 # -- MyST Configuration ------------------------------------------------------
