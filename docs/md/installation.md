@@ -57,7 +57,7 @@ cd dual_autodiffx
 ./buildwheels.sh
 ```
 
-To give permissions for this script to run you need to first run the below command. *BUT*, before you do, you should always read the script and understand it. If you're not fully comfortable do not run it (for security concerns probably shouldn't run any script).
+To give permissions for this script to run you need to first run the below command. *BUT*, before you do, you should always read the script and understand it. 
 
 ```bash
 chmod +x buildwheels.sh

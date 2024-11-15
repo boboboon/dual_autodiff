@@ -30,7 +30,7 @@ Thus, `y` represents both the value $f(x) = x^2$ and the derivative $f'(x) = 2x$
 The `differentiate` function automates this process by calculating the derivative of a given function at a specific point:
 
 ```python
-from dual_autodiff.autodiff_tools import differentiate
+from dual_autodiff.autodiff import differentiate
 
 # Define a function for differentiation
 def func(x):
@@ -66,7 +66,7 @@ In this Cython class:
 
 ### Cython Methods for Arithmetic Operations
 
-Cython's `cdef inline` methods define the core operations (+, -, *, /) for dual numbers. These methods are optimised with low-level C-like operations for speed.
+Cython's `cdef inline` methods define the core operations $(\plus, \minus, \cross, \div)$ for dual numbers. These methods are optimised with low-level C-like operations for speed.
 
 #### Addition
 
