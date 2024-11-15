@@ -34,7 +34,7 @@ To improve performance, a Cython version of the `Dual` class is available in `du
 
 ## differentiate Function
 
-The `differentiate` function calculates the derivative of a function at a specified point by initializing a dual number with a dual component of 1, allowing derivatives to propagate through the function. It works by calling the function with the dual number and returning the dual part of the result, which represents the derivative.
+The `differentiate` function calculates the derivative of a function at a specified point by initialising a dual number with a dual component of 1, allowing derivatives to propagate through the function. It works by calling the function with the dual number and returning the dual part of the result, which represents the derivative.
 
 - **Arguments:**
   - `f (Callable[[Dual], Dual])`: The function to differentiate, which should accept a single argument of type `Dual` and return a `Dual` instance.
