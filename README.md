@@ -122,3 +122,26 @@ $$
 | Quadratic Function $f(x) = x^2$          | $x = 3$    | 6                                             |
 | Trigonometric Function $f(x) = \sin(x)$  | $x = 0$    | 1                                             |
 | Composite Function $f(x) = e^x \ln(x)$   | $x = 2$    | $e^2 \cdot (\ln(2) + 0.5)$                   |
+
+
+ Contributions and A.I. Utilisation
+
+
+
+## Contributions
+Contributions to this project are welcome and appreciated! If you'd like to contribute:
+
+- Fork the Repository: Start by forking this repository to your GitHub account.
+- Clone Your Fork: Clone your forked repository locally to make changes.
+- Develop Your Changes: Add new features, fix bugs, or improve documentation within your branch.
+- Write Documentation: Clearly document any new functions, classes, or modifications to existing code.
+- Submit a Pull Request (PR): Once your changes are ready, push them to your forked repository and create a pull request. In your PR description, please explain the changes you made and why they improve the project.
+- All contributors are encouraged to write clean, modular, and well-documented code. Please include examples where applicable to demonstrate the intended use of new classes or functions.
+
+## A.I. Utilisation in Development
+This project has been developed with assistance from ChatGPT, an advanced AI language model. I initially draft the structure of classes, write examples, and document the main functions, and then use ChatGPT for:
+
+- Generating Additional Examples: After writing an initial example, ChatGPT helps create additional examples to illustrate edge cases, alternate uses, or complex scenarios.
+- Enhanced Documentation: ChatGPT assists in refining documentation by adding clarifications, expanding on function descriptions, and ensuring consistent terminology throughout.
+- Code Review Suggestions: ChatGPT provides suggestions on code efficiency, readability, and possible edge cases, helping maintain a high standard of code quality.
+- The collaboration with ChatGPT accelerates development by streamlining repetitive tasks and providing insights for a more polished and user-friendly outcome. Together, we aim to make this project accessible, efficient, and valuable for all users.

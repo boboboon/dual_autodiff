@@ -10,7 +10,7 @@ covers the following sections:
 - [API Documentation](#api-documentation)
 - [Analytical Solutions and Test Cases](#analytical-solutions-and-test-cases)
 
-
+If you want a quick overview, please go to the [README.md](../README.md).
 
 ## Overview
 ```{include} md/overview.md
