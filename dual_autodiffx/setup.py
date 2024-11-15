@@ -1,6 +1,6 @@
-from setuptools import setup, Extension, find_packages
-from Cython.Build import cythonize
 import numpy
+from Cython.Build import cythonize
+from setuptools import Extension, find_packages, setup
 
 # Define the extensions for Cython compilation
 extensions = [
