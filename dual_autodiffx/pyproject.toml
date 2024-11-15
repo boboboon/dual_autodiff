@@ -17,9 +17,20 @@ requires-python = ">=3.9"
 authors = [
     { name = "Lucas Curtin", email = "lucas.curtin@gmail.com" },
 ]
+
 dependencies = [
     "numpy",
-    "scipy",
+    "cython",
+    "cibuildwheel"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "matplotlib",
+    "jupyter",
+    "Sphinx",
+    "docker",
 ]
 
 [tool.setuptools_scm]
