@@ -1,5 +1,3 @@
-# dual_autodiff/autodiff_tools.py
-
 """Handles the differentiation of functions using the Dual class for automatic differentiation."""
 
 from typing import Callable
